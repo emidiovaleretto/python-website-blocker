@@ -6,7 +6,7 @@ def get_list_of_blocked_websites():
     """
     This function returns list of blocked websites.
     """
-    with open("blocked_sites.txt", "r") as f:
+    with open(config("BLOCKED_SITES"), "r") as f:
         blocked_websites = f.readlines()
 
     return blocked_websites

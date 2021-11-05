@@ -24,7 +24,7 @@ def website_blocker():
             content = file.read()
             for site in sites_to_block:
                 if site not in content:
-                    file.write(redirect_to + " " + site + "\n")
+                    file.write(f"{redirect_to} {site}\n")
 
     else:
         print("Access granted")
